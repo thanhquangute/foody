@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.quang.a14110161_truongthanhquang_foodyver1.Home_ThanhPho_ChonThanhPho"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorRed"
+        android:weightSum="15">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/colorRed"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="left|center"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="Chọn tỉnh/Thành phố"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Xong"
+            android:layout_weight="5"
+            android:background="@color/colorRed"
+            android:layout_gravity="center|right"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="#fff"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_search_black_24dp"/>
+        <EditText android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:textStyle="bold"
+            android:hint="Tìm nhanh"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:lines="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="#fff"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:background="@color/colorWhite"
+            android:text="Tự động xác định vị trí"
+            android:gravity="center|left"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_my_location_black_24dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="#f8f8f8"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#f8f8f8"
+            android:text="Vietnam"
+            android:gravity="center|left"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#f8f8f8"
+            android:text="Đổi quốc gia >"
+            android:gravity="right|center"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+    </LinearLayout>
+        <ListView
+            android:id="@+id/ListViewAnGi_DanhMuc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quang.a14110161_truongthanhquang_foodyver1.Home_BtnFoody">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="10"
+        android:background="@color/colorRed">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_weight="2"
+            android:background="@color/colorRed"
+            android:layout_gravity="center"/>
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center|left"
+            android:textSize="20sp"
+            android:text="Danh mục"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Khám phá"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"/>
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:numColumns="4"
+                android:layout_gravity="center"
+                android:stretchMode="columnWidth">
+            </GridView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Giao hàng/ Đặt chỗ"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+             <GridView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:id="@+id/gridView2"
+                 android:numColumns="2"
+                 android:layout_gravity="center"
+                 android:stretchMode="columnWidth">
+
+             </GridView>
+        </LinearLayout>
+
+
+</LinearLayout>

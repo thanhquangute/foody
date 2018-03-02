@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.quang.a14110161_truongthanhquang_foodyver1.Home_ODau_DanhMuc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="5"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btndanhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Danh mục"
+            android:gravity ="left|center"
+            android:layout_weight="1"
+            android:background="#fff" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/imgdanhmuc"
+            android:background="#fff"
+            android:src="@drawable/ic_check_black_24dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/ListViewODau_DanhMuc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
